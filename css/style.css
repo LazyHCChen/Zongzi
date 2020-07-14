@@ -1,0 +1,1408 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap&subset=chinese-traditional");
+* {
+ /* border: solid 2px;*/
+  font-family: 'Noto Sans TC','微軟正黑體'; }
+
+html, body {
+  font-size: 16px;
+  position: relative;
+
+}
+/*html {
+    overflow: -moz-hidden-unscrollable;
+    height: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    height: 100%;
+  width: calc(100vw + 18px);
+  overflow: auto;
+}*/
+body{
+  width: 100%
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0px; 
+  padding: 0px;
+}
+nav {
+  background-color: transparent; }
+  nav a {
+    border: solid 1px transparent;
+    font-size: 16px;
+    font-weight: bold;
+    color: #295135;
+    transition: 0.5s 0.1s;
+    margin-right: 40px;
+    margin-top: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    white-space: nowrap; }
+    nav a:hover {
+      color: #000000;
+      border-bottom: solid 1px rgba(41, 81, 53, 0.5); }
+
+.nav_top {
+  border-bottom: 1px solid white;
+  background-color: #FFFFFF; }
+
+span.navbar-toggler-icon {
+  line-height: 8px; }
+
+header .container {
+  position: relative; }
+
+header .top_pic {
+  position: relative;
+  left: 45%;
+  width: 48%;
+  padding: 80px 0px 60px 0px;
+  z-index: 0;
+  transition: 0.5s; }
+  header .top_pic:hover {
+    opacity: 0; }
+
+header .top_pic2 {
+  position: absolute;
+  width: 45%;
+  left: 44%;
+  top: 30%;
+  z-index: -1; }
+
+header .top_pic3 {
+  position: absolute;
+  width: 14%;
+  left: 20%;
+  top: 40%; }
+
+header .scroll {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 95%;
+  color: #295135;
+  opacity: 0;
+  transition: 0.5s; }
+  header .scroll:after {
+    display: block;
+    content: "v";
+    -webkit-transform: scaleX(1.2) scaleY(0.5);
+            transform: scaleX(1.2) scaleY(0.5);
+    text-align: center; }
+  header .scroll.go_top {
+    opacity: 1; }
+
+section {
+  padding: 20px; }
+
+#section_one, #section_two {
+  background-color: #BED06D; }
+  #section_one .no_1, #section_one .no_3, #section_two .no_1, #section_two .no_3 {
+    position: relative;
+    width: 49%;
+    left: 10%; }
+  #section_one .no_1_1, #section_one .no_3_3, #section_two .no_1_1, #section_two .no_3_3 {
+    position: relative;
+    width: 49%;
+    opacity: 1;
+    transition: 1s;
+    left: -39%; }
+    #section_one .no_1_1:hover, #section_one .no_3_3:hover, #section_two .no_1_1:hover, #section_two .no_3_3:hover {
+      opacity: 0; }
+  #section_one .no_2, #section_one .no_4, #section_two .no_2, #section_two .no_4 {
+    position: relative;
+    width: 49%;
+    left: 40%;
+    top: 0%; }
+  #section_one .no_2_2, #section_one .no_4_4, #section_two .no_2_2, #section_two .no_4_4 {
+    position: relative;
+    width: 49%;
+    opacity: 1;
+    transition: 1s;
+    left: -8%; }
+    #section_one .no_2_2:hover, #section_one .no_4_4:hover, #section_two .no_2_2:hover, #section_two .no_4_4:hover {
+      opacity: 0; }
+
+#section_one {
+  padding-top: 50px; }
+
+#section_four .no_5, #section_four .no_6, #section_four .no_7 {
+  position: relative;
+  width: 80%;
+  max-width: 850px;
+  min-width: 100px;
+  left: 15%;
+  padding: 30px; }
+
+#section_six .no_5, #section_six .no_6, #section_six .no_7 {
+  position: relative;
+  width: 80%;
+  max-width: 850px;
+  min-width: 100px;
+  left: 15%;
+  padding: 30px; }
+
+#section_five {
+  padding: 0; }
+  #section_five .description_1, #section_five .description_2, #section_five .description_3, #section_five .description_4, #section_five .description_5, #section_five .description_6, #section_five .description_7 {
+    position: relative; }
+  #section_five .step_1, #section_five .step_2, #section_five .step_3, #section_five .step_4, #section_five .step_5, #section_five .step_6, #section_five .step_7 {
+    padding: 0; }
+  #section_five .cook_1, #section_five .cook_2, #section_five .cook_3, #section_five .cook_4, #section_five .cook_5, #section_five .cook_6, #section_five .cook_7 {
+    width: 100%; }
+#section_five .col-sm-4 step_1{
+	background-color: #BED06D;
+}
+  #section_five .story_1, #section_five .story_4, #section_five .story_2, #section_five .story_5 {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 20px; }
+  #section_five .story_2, #section_five .story_5, #section_five .story_7 {
+    text-align: center; }
+  #section_five .story_3, #section_five .story_6, #section_five .story_7 {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 20px; }
+
+#section_five .story_2, #section_five .story_5, #section_five .story_7 {font-size: 24px;}
+/*   #section_five .description_1, #section_five .description_6 {
+    background-color: #BED06D; }
+  #section_five .description_3, #section_five .description_4, #section_five .description_7 {
+    background-color: rgba(190, 208, 109, 0.6); } */
+
+
+/* 介紹GIF */
+#section_five .col-sm-4.description_1{
+/* 	border-radius: 20px 20px 0px 0px; */
+	color: #555555;
+	background-image: linear-gradient(180deg,rgba(190, 208, 109,0.5),#eeeeee); 
+
+}
+#section_five .col-sm-4.step_1{
+/* 	border-radius: 0px 0px 20px 20px; */
+	overflow: hidden;
+
+}
+#section_five .col-sm-4.step_2{
+/* 	border-radius: 20px 20px 0px 0px; */
+	overflow: hidden;
+}
+#section_five .col-sm-4.description_2{
+/* 	border-radius: 0px 0px 20px 20px; */
+/* 	box-shadow: 0px 10px 0px 0px rgba(190, 108, 109,0.5) */
+	color: #555555;
+	background-image: linear-gradient(180deg,#eeeeee,rgba(190, 208, 109,0.5)); 
+
+}
+/* rgba(190, 208, 109,0.5) */
+/* rgba(41,81,53,0.5) */
+/* rgba(216, 227, 167,0.5) */
+#section_five .col-sm-4.step_3{
+/* 	border-radius: 0px 0px 20px 20px; */
+	overflow: hidden;
+}
+#section_five .col-sm-4.description_3{
+/* 	border-radius: 20px 20px 0px 0px; */
+	color: #555555;
+	background-image: linear-gradient(180deg,rgba(190, 208, 109,0.5),#eeeeee);
+}
+#section_five .col-sm-4.step_4{
+/* 	border-radius: 0px 0px 20px 20px; */
+	overflow: hidden;
+}
+#section_five .col-sm-4.description_4{
+/* 	border-radius: 20px 20px 0px 0px; */
+	color: #555555;
+	background-image: linear-gradient(180deg,rgba(190, 208, 109,0.5),#eeeeee);
+}
+#section_five .col-sm-4.step_5{
+/* 	border-radius: 20px 20px 0px 0px; */
+	overflow: hidden;
+}
+#section_five .col-sm-4.description_5{
+/* 	border-radius: 0px 0px 20px 20px; */
+	color: #555555;
+	background-image: linear-gradient(180deg,#eeeeee,rgba(190, 208, 109,0.5));
+}
+
+#section_five .col-sm-4.step_6{
+/* 	border-radius: 0px 0px 20px 20px; */
+	overflow: hidden;
+}
+#section_five .col-sm-4.description_6{
+/* 	border-radius: 20px 20px 0px 0px; */
+	color: #555555;
+	background-image: linear-gradient(180deg,rgba(190, 208, 109,0.5),#eeeeee); 
+}
+
+#section_five .col-sm-6.step_7{
+/* 	border-radius: 20px 0px 0px 20px; */
+	overflow: hidden;
+}
+#section_five .col-sm-6.description_7{
+/* 	border-radius: 0px 20px 20px 0px; */
+	color: #555555;
+	background-image: linear-gradient(90deg,rgba(190, 208, 109,0.5),#eeeeee);
+}
+
+/*文字調整*/
+#section_five .num_1{
+	 width: auto;
+	 height: auto;
+	 position: absolute;
+		text-align: right; 
+    font-size: 80px;
+    color: #373737;
+		right: 2%;
+		bottom: -5%;
+}
+.num_2{
+		position: absolute;
+		width: auto;
+	 	height: auto;
+		right: 2%;
+		bottom: -5%;
+    font-size: 80px;
+    color: #295135;
+		text-align: right;
+}
+#section_five .num_3{
+		position: absolute;
+		width: auto;
+	 	height: auto;
+		right: 2%;
+		bottom: -5%;
+    font-size: 80px;
+    color: #373737;
+}
+#section_five .num_4{
+		position: absolute;
+		width: auto;
+	 	height: auto;
+		right: 2%;
+		bottom: -5%;
+    font-size: 80px;
+    color: #373737;
+}
+#section_five .num_5{
+		position: absolute;
+		width: auto;
+	 	height: auto;
+		right: 2%;
+		bottom: -5%;
+    font-size: 80px;
+    color: #295135;
+}
+#section_five .num_6{
+		position: absolute;
+		width: auto;
+	 	height: auto;
+		right: 2%;
+		bottom: -5%;
+    font-size: 80px;
+    color: #373737;
+}
+#section_five .num_7{
+		position: absolute;
+		width: auto;
+	 	height: auto;
+		right: 2%;
+		bottom: -5%;
+    font-size: 80px;
+    color: #295135;
+}
+
+
+/*   #section_five .num_3, #section_five .num_4, #section_five .num_7 {
+    color: #295135; } */
+
+#section_seven .video iframe {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 100%;
+  height: 500px; }
+
+#section_eight .no_8, #section_eight .no_9 {
+  position: relative;
+  width: 80%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+#recipe {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+  #recipe .container-fluid {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 750px; }
+    #recipe .container-fluid .recipe {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      opacity: 0.5; }
+    #recipe .container-fluid .shrimpCir {
+      position: absolute;
+      border-radius: 50%;
+      width: 19.3%;
+      height: 36%;
+      overflow: hidden;
+      left: 15.2%;
+      top: 2.4%;
+      opacity: 0;
+      transition: 1s; }
+      #recipe .container-fluid .shrimpCir:hover {
+        opacity: 1; }
+    #recipe .container-fluid .porkCir {
+      position: absolute;
+      border-radius: 50%;
+      width: 16.5%;
+      height: 30.3%;
+      left: 3.9%;
+      top: 23.2%;
+      opacity: 0;
+      transition: 1s; }
+      #recipe .container-fluid .porkCir:hover {
+        opacity: 1; }
+    #recipe .container-fluid .peanutCir {
+      position: absolute;
+      border-radius: 50%;
+      width: 22.3%;
+      height: 43.1%;
+      left: 2.05%;
+      top: 54.4%;
+      opacity: 0;
+      transition: 1s; }
+      #recipe .container-fluid .peanutCir:hover {
+        opacity: 1; }
+    #recipe .container-fluid .smallShrimpCir {
+      position: absolute;
+      border-radius: 50%;
+      width: 19.2%;
+      height: 37.6%;
+      left: 18.2%;
+      top: 35.8%;
+      opacity: 0;
+      transition: 1s; }
+      #recipe .container-fluid .smallShrimpCir:hover {
+        opacity: 1; }
+    #recipe .container-fluid .mushroomCir {
+      position: absolute;
+      border-radius: 50%;
+      width: 20%;
+      height: 38.5%;
+      left: 33.4%;
+      top: 16%;
+      opacity: 0;
+      transition: 1s; }
+      #recipe .container-fluid .mushroomCir:hover {
+        opacity: 1; }
+    #recipe .container-fluid .redOnionCir {
+      position: absolute;
+      border-radius: 50%;
+      left: 33.4%;
+      top: 55.8%;
+      width: 18.8%;
+      height: 37.3%;
+      transition: 1s;
+      opacity: 0; }
+      #recipe .container-fluid .redOnionCir:hover {
+        opacity: 1; }
+    #recipe .container-fluid .leafCir {
+      position: absolute;
+      left: 44.5%;
+      top: 0%;
+      width: 24%;
+      height: 100%;
+      transition: 1s;
+      opacity: 0; }
+      #recipe .container-fluid .leafCir:hover {
+        opacity: 1; }
+    #recipe .container-fluid .riceCir {
+      position: absolute;
+      border-radius: 50%;
+      left: 62.7%;
+      top: 6.4%;
+      width: 36.3%;
+      height: 71.2%;
+      opacity: 0;
+      transition: 1s; }
+      #recipe .container-fluid .riceCir:hover {
+        opacity: 1; }
+    #recipe .container-fluid .ropeCir {
+      position: absolute;
+      left: 32.4%;
+      top: 9.2%;
+      width: 16.9%;
+      height: 20%;
+      opacity: 0;
+      transition: 1s; }
+      #recipe .container-fluid .ropeCir:hover {
+        opacity: 1; }
+    #recipe .container-fluid .shrimpContent {
+      position: absolute;
+      width: 30%;
+      height: 20%;
+      left: 35%;
+      top: 35%;
+      background-image: url("https://raw.githubusercontent.com/smile8724/webpic/master/shrimpCut.png");
+      background-size: cover;
+      border-radius: 20px 20px 20px 20px;
+      box-shadow: 10px 10px #BED06D;
+      border-image-slice: 1;
+      z-index: 1001;
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+      -webkit-animation-name: shrimpOpacity;
+              animation-name: shrimpOpacity;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #recipe .container-fluid .shrimpContent h2 {
+        font-size: 2.5em;
+        text-align: center;
+        color: white;
+        display: inline-block;
+        width: 100%;
+        -webkit-animation-name: textShow;
+                animation-name: textShow;
+        -webkit-animation-duration: 2s;
+                animation-duration: 2s; }
+        #recipe .container-fluid .shrimpContent h2 span {
+          font-size: 0.5em;
+          color: white;
+          width: 100%;
+          margin-top: 33%;
+          margin-left: 5%;
+          -webkit-animation-name: textShow;
+                  animation-name: textShow;
+          -webkit-animation-duration: 2s;
+                  animation-duration: 2s; }
+    #recipe .container-fluid .porkContent {
+      position: absolute;
+      width: 30%;
+      height: 20%;
+      left: 25%;
+      top: 45%;
+      background-image: url("https://raw.githubusercontent.com/smile8724/webpic/master/porkCut.png");
+      background-size: cover;
+      border-radius: 20px 20px 20px 20px;
+      box-shadow: 10px 10px #BED06D;
+      border-image-slice: 1;
+      z-index: 1001;
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+      -webkit-animation-name: porkOpacity;
+              animation-name: porkOpacity;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #recipe .container-fluid .porkContent h2 {
+        font-size: 2.5em;
+        text-align: center;
+        color: white;
+        display: inline-block;
+        -webkit-animation-duration: 2s;
+                animation-duration: 2s;
+        -webkit-animation-name: textShow;
+                animation-name: textShow; }
+      #recipe .container-fluid .porkContent .close {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        flex-wrap: nowrap; }
+      #recipe .container-fluid .porkContent h3 {
+        font-size: 1.5em;
+        color: white;
+        width: 100%;
+        margin-top: 33%;
+        margin-left: -10%;
+        -webkit-animation-duration: 2s;
+                animation-duration: 2s;
+        -webkit-animation-name: textShow;
+                animation-name: textShow; }
+      #recipe .container-fluid .porkContent p {
+        width: 120%;
+        margin-right: 10%;
+        font-size: 0.8em;
+        color: white;
+        display: inline-block;
+        -webkit-animation-duration: 2s;
+                animation-duration: 2s;
+        -webkit-animation-name: textShow;
+                animation-name: textShow; }
+    #recipe .container-fluid .peanutContent {
+      position: absolute;
+      width: 30%;
+      height: 20%;
+      left: 25%;
+      top: 40%;
+      background-image: url("https://raw.githubusercontent.com/smile8724/webpic/master/peanutCut.png");
+      background-size: cover;
+      border-radius: 20px 20px 20px 20px;
+      box-shadow: 10px -10px #BED06D;
+      border-image-slice: 1;
+      z-index: 1001;
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+      -webkit-animation-name: peanutOpacity;
+              animation-name: peanutOpacity;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #recipe .container-fluid .peanutContent h2 {
+        font-size: 2.5em;
+        text-align: center;
+        color: white;
+        display: inline-block;
+        width: 100%;
+        -webkit-animation-name: textShow;
+                animation-name: textShow;
+        -webkit-animation-duration: 2s;
+                animation-duration: 2s; }
+        #recipe .container-fluid .peanutContent h2 span {
+          font-size: 0.5em;
+          color: white;
+          width: 100%;
+          margin-top: 33%;
+          margin-left: 5%;
+          -webkit-animation-name: textShow;
+                  animation-name: textShow;
+          -webkit-animation-duration: 2s;
+                  animation-duration: 2s; }
+    #recipe .container-fluid .porkContent {
+      position: absolute;
+      width: 30%;
+      height: 20%;
+      left: 25%;
+      top: 45%;
+      background-image: url("https://raw.githubusercontent.com/smile8724/webpic/master/porkCut.png");
+      background-size: cover;
+      border-radius: 20px 20px 20px 20px;
+      box-shadow: 10px 10px #BED06D;
+      border-image-slice: 1;
+      z-index: 1001;
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+      -webkit-animation-name: porkOpacity;
+              animation-name: porkOpacity;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #recipe .container-fluid .porkContent h2 {
+        font-size: 2.5em;
+        text-align: center;
+        color: white;
+        display: inline-block;
+        -webkit-animation-duration: 2s;
+                animation-duration: 2s;
+        -webkit-animation-name: textShow;
+                animation-name: textShow; }
+      #recipe .container-fluid .porkContent .close {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        flex-wrap: nowrap; }
+      #recipe .container-fluid .porkContent h3 {
+        font-size: 1.5em;
+        color: white;
+        width: 100%;
+        margin-top: 33%;
+        margin-left: -10%;
+        -webkit-animation-duration: 2s;
+                animation-duration: 2s;
+        -webkit-animation-name: textShow;
+                animation-name: textShow; }
+      #recipe .container-fluid .porkContent p {
+        width: 120%;
+        margin-right: 10%;
+        font-size: 0.8em;
+        color: white;
+        display: inline-block;
+        -webkit-animation-duration: 2s;
+                animation-duration: 2s;
+        -webkit-animation-name: textShow;
+                animation-name: textShow; }
+    #recipe .container-fluid .smallShrimpContent {
+      position: absolute;
+      width: 30%;
+      height: 20%;
+      left: 40%;
+      top: 40%;
+      background-image: url("https://raw.githubusercontent.com/smile8724/webpic/master/smallShrimpCut.png");
+      background-size: cover;
+      border-radius: 20px 20px 20px 20px;
+      box-shadow: 10px 10px #BED06D;
+      border-image-slice: 1;
+      z-index: 1001;
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+      -webkit-animation-name: smallShrimpOpacity;
+              animation-name: smallShrimpOpacity;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #recipe .container-fluid .smallShrimpContent h2 {
+        font-size: 2.5em;
+        text-align: center;
+        color: white;
+        display: inline-block;
+        width: 100%;
+        -webkit-animation-duration: 2s;
+                animation-duration: 2s;
+        -webkit-animation-name: textShow;
+                animation-name: textShow; }
+        #recipe .container-fluid .smallShrimpContent h2 span {
+          font-size: 0.5em;
+          color: white;
+          width: 100%;
+          margin-top: 33%;
+          margin-left: 5%;
+          -webkit-animation-duration: 2s;
+                  animation-duration: 2s;
+          -webkit-animation-name: textShow;
+                  animation-name: textShow; }
+    #recipe .container-fluid .mushroomContent {
+      position: absolute;
+      width: 30%;
+      height: 20%;
+      left: 50%;
+      top: 52%;
+      background-image: url("https://raw.githubusercontent.com/smile8724/webpic/master/mushroomCut.png");
+      background-size: cover;
+      border-radius: 20px 20px 20px 20px;
+      box-shadow: 10px 10px #BED06D;
+      border-image-slice: 1;
+      z-index: 1001;
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+      -webkit-animation-name: mushroomOpacity;
+              animation-name: mushroomOpacity;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #recipe .container-fluid .mushroomContent h2 {
+        font-size: 2.5em;
+        text-align: center;
+        color: white;
+        display: inline-block;
+        width: 100%;
+        -webkit-animation-duration: 2s;
+                animation-duration: 2s;
+        -webkit-animation-name: textShow;
+                animation-name: textShow; }
+        #recipe .container-fluid .mushroomContent h2 span {
+          font-size: 0.5em;
+          color: white;
+          width: 100%;
+          margin-top: 33%;
+          margin-left: 5%;
+          -webkit-animation-duration: 2s;
+                  animation-duration: 2s;
+          -webkit-animation-name: textShow;
+                  animation-name: textShow; }
+    #recipe .container-fluid .redOnionContent {
+      position: absolute;
+      width: 30%;
+      height: 20%;
+      left: 50%;
+      top: 38%;
+      background-image: url("https://raw.githubusercontent.com/smile8724/webpic/master/redOnionCut.png");
+      background-size: cover;
+      border-radius: 20px 20px 20px 20px;
+      box-shadow: 10px -10px #BED06D;
+      border-image-slice: 1;
+      z-index: 1001;
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+      -webkit-animation-name: redOnionOpacity;
+              animation-name: redOnionOpacity;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #recipe .container-fluid .redOnionContent h2 {
+        font-size: 2.5em;
+        text-align: center;
+        color: white;
+        display: inline-block;
+        width: 100%;
+        -webkit-animation-duration: 2s;
+                animation-duration: 2s;
+        -webkit-animation-name: textShow;
+                animation-name: textShow; }
+        #recipe .container-fluid .redOnionContent h2 span {
+          font-size: 0.5em;
+          color: white;
+          width: 100%;
+          margin-top: 33%;
+          margin-left: 5%;
+          -webkit-animation-duration: 2s;
+                  animation-duration: 2s;
+          -webkit-animation-name: textShow;
+                  animation-name: textShow; }
+    #recipe .container-fluid .leafContent {
+      position: absolute;
+      width: 30%;
+      height: 20%;
+      left: 15%;
+      top: 42%;
+      background-image: url("https://raw.githubusercontent.com/smile8724/webpic/master/leafCut.png");
+      background-size: cover;
+      border-radius: 20px 20px 20px 20px;
+      box-shadow: -10px 10px #BED06D;
+      border-image-slice: 1;
+      z-index: 1001;
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+      -webkit-animation-name: leafOpacity;
+              animation-name: leafOpacity;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #recipe .container-fluid .leafContent h2 {
+        font-size: 2.5em;
+        text-align: center;
+        color: white;
+        display: inline-block;
+        width: 100%;
+        -webkit-animation-duration: 2s;
+                animation-duration: 2s;
+        -webkit-animation-name: textShow;
+                animation-name: textShow; }
+        #recipe .container-fluid .leafContent h2 span {
+          font-size: 0.5em;
+          color: white;
+          width: 100%;
+          margin-top: 33%;
+          margin-left: 5%;
+          -webkit-animation-duration: 2s;
+                  animation-duration: 2s;
+          -webkit-animation-name: textShow;
+                  animation-name: textShow; }
+    #recipe .container-fluid .riceContent {
+      position: absolute;
+      width: 30%;
+      height: 20%;
+      left: 28%;
+      top: 42%;
+      background-image: url("https://raw.githubusercontent.com/smile8724/webpic/master/riceCut.png");
+      background-size: cover;
+      border-radius: 20px 20px 20px 20px;
+      box-shadow: -10px 10px #BED06D;
+      border-image-slice: 1;
+      z-index: 1001;
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+      -webkit-animation-name: riceOpacity;
+              animation-name: riceOpacity;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #recipe .container-fluid .riceContent h2 {
+        font-size: 2.5em;
+        text-align: center;
+        color: white;
+        display: inline-block;
+        width: 100%;
+        -webkit-animation-duration: 2s;
+                animation-duration: 2s;
+        -webkit-animation-name: textShow;
+                animation-name: textShow; }
+        #recipe .container-fluid .riceContent h2 span {
+          font-size: 0.5em;
+          color: white;
+          width: 100%;
+          margin-top: 33%;
+          margin-left: 5%;
+          -webkit-animation-duration: 2s;
+                  animation-duration: 2s;
+          -webkit-animation-name: textShow;
+                  animation-name: textShow; }
+    #recipe .container-fluid .ropeContent {
+      position: absolute;
+      width: 30%;
+      height: 20%;
+      left: 40%;
+      top: 25%;
+      background-image: url("https://raw.githubusercontent.com/smile8724/webpic/master/ropeCut.png");
+      background-size: cover;
+      border-radius: 20px 20px 20px 20px;
+      box-shadow: 10px 10px #BED06D;
+      border-image-slice: 1;
+      z-index: 1001;
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+      -webkit-animation-name: ropeOpacity;
+              animation-name: ropeOpacity;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #recipe .container-fluid .ropeContent h2 {
+        font-size: 2.5em;
+        text-align: center;
+        color: white;
+        display: inline-block;
+        width: 100%;
+        -webkit-animation-duration: 2s;
+                animation-duration: 2s;
+        -webkit-animation-name: textShow;
+                animation-name: textShow; }
+        #recipe .container-fluid .ropeContent h2 span {
+          font-size: 0.5em;
+          color: white;
+          width: 100%;
+          margin-top: 33%;
+          margin-left: 5%;
+          -webkit-animation-duration: 2s;
+                  animation-duration: 2s;
+          -webkit-animation-name: textShow;
+                  animation-name: textShow; }
+
+@-webkit-keyframes porkOpacity {
+  0% {
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+    opacity: 0;
+    left: 15%;
+    top: 25%; }
+  15% {
+    border-radius: 25%; }
+  50% {
+    width: 30%;
+    height: 20%; }
+  100% {
+    opacity: 1; } }
+
+@keyframes porkOpacity {
+  0% {
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+    opacity: 0;
+    left: 15%;
+    top: 25%; }
+  15% {
+    border-radius: 25%; }
+  50% {
+    width: 30%;
+    height: 20%; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes shrimpOpacity {
+  0% {
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+    opacity: 0;
+    left: 30%;
+    top: 20%; }
+  15% {
+    border-radius: 25%; }
+  25% {
+    width: 30%;
+    width: 20%; }
+  100% {
+    opacity: 1; } }
+
+@keyframes shrimpOpacity {
+  0% {
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+    opacity: 0;
+    left: 30%;
+    top: 20%; }
+  15% {
+    border-radius: 25%; }
+  25% {
+    width: 30%;
+    width: 20%; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes peanutOpacity {
+  0% {
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+    opacity: 0;
+    left: 30%;
+    top: 55%; }
+  15% {
+    border-radius: 25%; }
+  50% {
+    width: 30%;
+    width: 20%; }
+  100% {
+    opacity: 1; } }
+
+@keyframes peanutOpacity {
+  0% {
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+    opacity: 0;
+    left: 30%;
+    top: 55%; }
+  15% {
+    border-radius: 25%; }
+  50% {
+    width: 30%;
+    width: 20%; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes smallShrimpOpacity {
+  0% {
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+    opacity: 0;
+    left: 30%;
+    top: 55%; }
+  15% {
+    border-radius: 25%; }
+  25% {
+    width: 30%;
+    width: 20%; }
+  100% {
+    opacity: 1; } }
+
+@keyframes smallShrimpOpacity {
+  0% {
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+    opacity: 0;
+    left: 30%;
+    top: 55%; }
+  15% {
+    border-radius: 25%; }
+  25% {
+    width: 30%;
+    width: 20%; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes mushroomOpacity {
+  0% {
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+    -webkit-transform: rotate(-33deg);
+            transform: rotate(-33deg);
+    opacity: 0;
+    left: 35%;
+    top: 45%; }
+  15% {
+    border-radius: 25%; }
+  25% {
+    width: 30%;
+    width: 20%; }
+  100% {
+    opacity: 1; } }
+
+@keyframes mushroomOpacity {
+  0% {
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+    -webkit-transform: rotate(-33deg);
+            transform: rotate(-33deg);
+    opacity: 0;
+    left: 35%;
+    top: 45%; }
+  15% {
+    border-radius: 25%; }
+  25% {
+    width: 30%;
+    width: 20%; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes redOnionOpacity {
+  0% {
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+    opacity: 0;
+    left: 48%;
+    top: 60%; }
+  15% {
+    border-radius: 25%; }
+  25% {
+    width: 30%;
+    width: 20%; }
+  50% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg); }
+  100% {
+    opacity: 1; } }
+
+@keyframes redOnionOpacity {
+  0% {
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+    opacity: 0;
+    left: 48%;
+    top: 60%; }
+  15% {
+    border-radius: 25%; }
+  25% {
+    width: 30%;
+    width: 20%; }
+  50% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg); }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes leafOpacity {
+  0% {
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+    opacity: 0;
+    left: 18%;
+    top: 41%; }
+  15% {
+    border-radius: 25%; }
+  25% {
+    width: 30%;
+    width: 20%; }
+  100% {
+    opacity: 1; } }
+
+@keyframes leafOpacity {
+  0% {
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+    opacity: 0;
+    left: 18%;
+    top: 41%; }
+  15% {
+    border-radius: 25%; }
+  25% {
+    width: 30%;
+    width: 20%; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes riceOpacity {
+  0% {
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+    opacity: 0;
+    left: 30%;
+    top: 41%; }
+  10% {
+    border-radius: 25%;
+    width: 30%;
+    width: 20%; }
+  100% {
+    opacity: 1; } }
+
+@keyframes riceOpacity {
+  0% {
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+    opacity: 0;
+    left: 30%;
+    top: 41%; }
+  10% {
+    border-radius: 25%;
+    width: 30%;
+    width: 20%; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes ropeOpacity {
+  0% {
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+    opacity: 0;
+    left: 30%;
+    top: 20%; }
+  15% {
+    border-radius: 25%; }
+  25% {
+    width: 30%;
+    width: 20%; }
+  100% {
+    opacity: 1; } }
+
+@keyframes ropeOpacity {
+  0% {
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+    opacity: 0;
+    left: 30%;
+    top: 20%; }
+  15% {
+    border-radius: 25%; }
+  25% {
+    width: 30%;
+    width: 20%; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes textShow {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px); }
+  70% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+@keyframes textShow {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px); }
+  70% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+[data-aos="textShow2"]{
+	opacity: 0;
+	-webkit-transform: translateX(50px);
+	        transform: translateX(50px);
+	transition-property: opacity,-webkit-transform;
+	transition-property: transform,opacity;
+	transition-property: transform,opacity,-webkit-transform;
+}
+[data-aos="textShow2"].aos-animate{
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	        transform: translateX(0px);
+}
+
+
+#back_top {
+	width: 50px;
+	height: 50px;
+  border-radius: 100%;
+/*   padding: 10px; */
+/*   display: inline-block; */
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+/*   background-color: #BED06D;
+  color: #000000; */
+/*   box-shadow: 1px 1.5px 2px 0.5px; */
+	z-index:1002;
+	
+}
+img.but{
+	width: 50px;
+	height: 50px;
+}
+#back_top:hover {
+  background-color: #295135;
+  color: #BED06D;
+}
+
+
+//作者
+#hc, #wh {
+  padding: 0;
+}
+#hc .pic1, #hc .pic2, #wh .pic1, #wh .pic2 {
+  width: 100%;
+  border-radius: 500px;
+  padding: 10px;
+  box-shadow: 0px 0px 1px 1px #295135;
+}
+#hc .name1, #hc .name2, #wh .name1, #wh .name2 {
+
+  text-align: center;
+  padding-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+#hc .job1, #hc .job2, #wh .job1, #wh .job2 {
+
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+#hc .comments1, #hc .comments2, #wh .comments1, #wh .comments2 {
+
+	width: 80%;
+  padding: 5px;
+  letter-spacing: 3px;
+  color: black;
+  line-height: 30px;
+}
+
+/* .hoover .card1, .hoover .card2 {
+  position: flex;
+  z-index: -1;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: 0;
+  transition: 0.5s;
+}
+.hoover:hover .card1, .hoover:hover .card2 {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  opacity: 1;
+} */
+
+
+#flower{
+  margin: 0;
+}
+
+
+#flower .card1{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+
+#flower .card2{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+
+
+
+/*foo*/
+footer#footer div.yhyhyh {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-content: center;
+  background-color: #295135;
+}
+footer#footer div.yhyhyh .copyright {
+  display: flex;
+  height: 50px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+footer#footer div.yhyhyh div.hchc {
+  height: 50px;
+  width: 50px;
+}
+footer#footer div.yhyhyh div.hchc .hc_head {
+  width: 100%;
+}
+footer#footer div.yhyhyh div.whwh {
+  height: 50px;
+  width: 50px;
+}
+footer#footer div.yhyhyh div.whwh .wh_head {
+  width: 110%;
+}
+footer#footer div.yhyhyh div.all {
+  display: flex;
+}
+footer#footer div.yhyhyh div.all div.hc_ig {
+  -webkit-mask-image: url("https://image.flaticon.com/icons/svg/87/87390.svg");
+          mask-image: url("https://image.flaticon.com/icons/svg/87/87390.svg");
+  -webkit-mask-size: cover;
+          mask-size: cover;
+  width: 30px;
+  height: 30px;
+  opacity: 100%;
+  z-index: 1;
+  background-color: #BED06D;
+  margin: 10px;
+}
+footer#footer div.yhyhyh div.all div.hc_ig a.hc_ig2 {
+  z-index: 2;
+  font-size: 30px;
+  text-align: center;
+  color: transparent;
+}
+footer#footer div.yhyhyh div.all a.account {
+  color: #BED06D;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+
